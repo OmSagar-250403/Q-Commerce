@@ -1,0 +1,5 @@
+import mongoose from "mongoose";
+
+export const connectDB = mongoose.connect(process.env.mongo_url)
+    .then(() => console.log("Connected"))
+    .catch((e) => console.log(e));
