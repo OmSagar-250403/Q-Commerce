@@ -1,6 +1,6 @@
 import express from "express";
 import passport from "passport";
-import { getAdminUsers } from "../controllers/user.js";
+import { getAdminUsers , logout } from "../controllers/user.js";
 
 const router = express.Router();
 
@@ -14,6 +14,8 @@ router.get("/login",
       res.send("Logged In");
     }
   );
+
+router.get("/logout", logout);
 
 router.get("/me", getAdminUsers);
 
