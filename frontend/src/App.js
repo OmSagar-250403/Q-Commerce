@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Contact from "./components/contact/Contact"
 import About from "./components/about/About";
+import Cart from "./components/cart/Cart";
 
 
 import "./styles/app.scss";
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/contact' element={<Contact/>} />
         <Route path="/about" element={<About />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
 
       <Footer />
