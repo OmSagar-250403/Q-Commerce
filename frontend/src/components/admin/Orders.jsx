@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineEye } from "react-icons/ai";
+import {GiArmoredBoomerang} from "react-icons/gi"
 
-const MyOrders = () => {
+const Orders = () => {
   const arr = [1, 2, 3, 4];
 
   return (
@@ -16,6 +17,7 @@ const MyOrders = () => {
               <th>Item Qty</th>
               <th>Amount</th>
               <th>Payment Method</th>
+              <th>User</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -26,12 +28,17 @@ const MyOrders = () => {
                 <td>#sdkfsdfdsf</td>
                 <td>Processing</td>
                 <td>5</td>
-                <td>₹{2906}</td>
+                <td>₹{2800}</td>
                 <td>COD</td>
+                <td>Om</td>
                 <td>
                   <Link to={`/order/${"asdsds"}`}>
                     <AiOutlineEye />
                   </Link>
+
+                  <button>
+< GiArmoredBoomerang/>
+                  </button>
                 </td>
               </tr>
             ))}
@@ -42,4 +49,4 @@ const MyOrders = () => {
   );
 };
 
-export default MyOrders;
+export default Orders;

@@ -8,6 +8,9 @@ nav {
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
   background-color: white;
+  position: sticky; /* Make the nav sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure it stays above other content */
 
   > div {
     display: flex;

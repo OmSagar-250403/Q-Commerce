@@ -1,0 +1,84 @@
+@import "colors";
+
+.notFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pink;
+  color: $dark;
+
+  main {
+    text-align: center;
+   
+    padding: 2rem;
+    border-radius: 8px;
+    
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        font-size: 5rem;
+        color: $red;
+      }
+
+      h1 {
+        font-size: 4rem;
+        color: $dark;
+        margin: 1rem 0;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: $dark;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: white;
+      background-color: $dark;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .notFound {
+    main {
+      padding: 1rem;
+
+      div {
+        svg {
+          font-size: 4rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+  }
+}

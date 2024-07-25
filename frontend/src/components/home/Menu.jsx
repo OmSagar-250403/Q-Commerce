@@ -15,8 +15,8 @@ const Menu = () => {
       <div>
         <MenuCard
           itemNum={1}
-          burgerSrc={Tea1}
-          price={200}
+          ChaiSrc={Tea1}
+          price={350}
           title="Masala Chai"
           handler={addToCartHandler}
           delay={0.1}
@@ -24,8 +24,8 @@ const Menu = () => {
         
         <MenuCard
           itemNum={2}
-          burgerSrc={Tea2}
-          price={500}
+          ChaiSrc={Tea2}
+          price={600}
           title="Green Tea"
           delay={0.5}
           handler={addToCartHandler}
@@ -33,8 +33,8 @@ const Menu = () => {
         
         <MenuCard
           itemNum={3}
-          burgerSrc={Tea3}
-          price={1800}
+          ChaiSrc={Tea3}
+          price={900}
           title="Lemon Tea"
           delay={0.8}
           handler={addToCartHandler}
