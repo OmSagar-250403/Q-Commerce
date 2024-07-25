@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import burger1 from "../../assets/burger1.png";
-import burger2 from "../../assets/burger2.png";
-import burger3 from "../../assets/burger3.png";
+import Tea1 from "../../assets/bg1044.jpg";
+import Tea2 from "../../assets/1022.jpg";
+import Tea3 from "../../assets/1011.jpeg";
 
 const CartItem = ({ value, title, img, increment, decrement }) => (
   <div className="cartItem">
@@ -28,22 +28,22 @@ const Cart = () => {
     <section className="cart">
       <main>
         <CartItem
-          title={"Cheese Burger"}
-          img={burger1}
+          title={"Masala Chai"}
+          img={Tea1}
           value={0}
           increment={() => increment(1)}
           decrement={() => decrement(1)}
         />
         <CartItem
-          title={"Veg Cheese Burger"}
-          img={burger2}
+          title={"Green Tea"}
+          img={Tea2}
           value={0}
           increment={() => increment(2)}
           decrement={() => decrement(2)}
         />
         <CartItem
-          title={"Cheese Burger with French Fries"}
-          img={burger3}
+          title={"Lemon Tea"}
+          img={Tea3}
           value={0}
           increment={() => increment(3)}
           decrement={() => decrement(3)}
