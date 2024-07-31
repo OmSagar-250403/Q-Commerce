@@ -1,5 +1,5 @@
 import React from "react";
-import { IoCafeOutline } from "react-icons/io5";
+import { IoFastFoodOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { FiShoppingCart, FiLogIn } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
@@ -24,7 +24,7 @@ const Header = ({ isAuthenticated = false }) => {
     <nav>
       
       <motion.div {...options}>
-        <IoCafeOutline />
+        <IoFastFoodOutline />
       </motion.div>
 
       <div>

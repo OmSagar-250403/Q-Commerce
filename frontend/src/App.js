@@ -1,5 +1,5 @@
 import "./styles/app.scss"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./components/home/Home";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -19,10 +19,13 @@ import NotFound from "./components/layout/NotFound";
 
 
 
+
+
+
 import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
-import "./styles/menu.scss";
+import "./styles/menu1.scss";
 import "./styles/footer.scss"
 import "./styles/contact.scss"
 import "./styles/cart.scss"
@@ -38,6 +41,7 @@ import "./styles/notFound.scss"
 
 
 function App() {
+  
   return (
     <Router>
       <Header isAuthenticated={true} />

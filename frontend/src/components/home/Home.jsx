@@ -21,14 +21,14 @@ const Home = () => {
     <>
       <section className="home">
         <div>
-          <motion.h1 {...options}>Tea Junction</motion.h1>
+          <motion.h1 {...options}>PIZZA MANIA</motion.h1>
           <motion.p
             {...options}
             transition={{
               delay: 0.2,
             }}
           >
-            Tea is the answer, no matter what the question is.
+            Life is better with a slice of pizza!
           </motion.p>
         </div>
 

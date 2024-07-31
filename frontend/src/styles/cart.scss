@@ -1,18 +1,24 @@
 @import "colors";
+
 .cart {
   background-color: $pink;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-bottom: 4rem; /* Space at the bottom to prevent merging with footer */
 
   > main {
-    height: 100%;
     background-color: white;
     max-width: 900px;
     margin: auto;
     padding: 2rem;
-
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    height: 100%;
+    
     > article {
-      padding: 2rem;
+      padding: 6rem;
+      
+
       > div {
         display: flex;
         justify-content: space-between;
@@ -34,7 +40,7 @@
 
 .cartItem {
   background-color: rgb(246, 246, 246);
-  margin: 1rem;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +58,8 @@
 
     > img {
       height: 50px;
-      padding-left: 15px;
+      padding-left: 30px;
+      padding-right: 40px;
     }
 
     > input {
@@ -83,7 +90,7 @@
     }
   }
 }
-  
+
 @media screen and (max-width: 600px) {
   .cart > main > article > a {
     float: none;

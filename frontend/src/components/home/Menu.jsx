@@ -1,9 +1,8 @@
 import React from "react";
 import MenuCard from "./MenuCard";
-import Tea1 from "../../assets/bg1044.jpg";
-import Tea2 from "../../assets/1022.jpg";
-import Tea3 from "../../assets/1011.jpeg";
-
+import FP from "../../assets/FP.jpg";
+import PP from "../../assets/PP.jpg";
+import CBP from "../../assets/CBP.jpg";
 
 const Menu = () => {
   const addToCartHandler = (itemNum) => {};
@@ -15,29 +14,29 @@ const Menu = () => {
       <div>
         <MenuCard
           itemNum={1}
-          ChaiSrc={Tea1}
-          price={350}
-          title="Masala Chai"
+          ChaiSrc={FP}
+          price={550}
+          title="Farmhouse Pizza"
           handler={addToCartHandler}
           delay={0.1}
         />
         
         <MenuCard
           itemNum={2}
-          ChaiSrc={Tea2}
+          ChaiSrc={PP}
           price={600}
-          title="Green Tea"
-          delay={0.5}
+          title="Pasta Pizza"
           handler={addToCartHandler}
+          delay={0.5}
         />
         
         <MenuCard
           itemNum={3}
-          ChaiSrc={Tea3}
+          ChaiSrc={CBP}
           price={900}
-          title="Lemon Tea"
-          delay={0.8}
+          title="Cheese Burst Pizza"
           handler={addToCartHandler}
+          delay={0.8}
         />
       </div>
     </section>
