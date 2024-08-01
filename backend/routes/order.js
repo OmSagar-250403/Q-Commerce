@@ -9,10 +9,11 @@ import {
   processOrder,
 } from "../controllers/order.js";
 import { authorizeAdmin, isAuthenticated } from "../middlewares/auth.js";
+import { getAdminStats } from "../controllers/user.js";
 
 const router = express.Router();
 
-router.post("/createorder", placeOrder);
+router.post("/createorder", isAuthenticated, placeOrder);
 
 //router.post("/createorderonline", isAuthenticated, placeOrderOnline);
 
@@ -25,5 +26,6 @@ router.get("/order/:id", isAuthenticated, getOrderDetails);
 // Add Admin Middleware
 router.get("/admin/orders", isAuthenticated, authorizeAdmin, getAdminOrders);
 router.get("/admin/order/:id", isAuthenticated, authorizeAdmin, processOrder);
+router.get("/admin/stats" , isAuthenticated, authorizeAdmin, getAdminStats)
 
 export default router;
